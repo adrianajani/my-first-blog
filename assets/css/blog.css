@@ -1,0 +1,37 @@
+body { transition: background-color 0.5s, color 0.5s; } 
+
+.light-mode { background-color: white; color: black; } 
+
+.dark-mode { background-color: black; color: white; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+main {
+    padding: 20px;
+}
+#posts {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.container-about-me {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: auto for image, 1fr for text */
+    align-items: right; /* Vertically center the items if desired */
+    gap: 20px; /* Space between image and text */
+    padding: 20px; /* Optional padding around the container */
